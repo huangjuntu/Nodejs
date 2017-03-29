@@ -1,0 +1,12 @@
+var http = require('http')
+
+http
+	.createServer(function(req,res){
+		res.writeHead(200,{'Content-Type':'text/plain'})
+		res.write('hello node.js')
+		res.end()
+	})
+	.listen(2015)
+	
+	//node 这个文件
+	//浏览器输入：localhost:2015
